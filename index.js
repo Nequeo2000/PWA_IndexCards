@@ -95,8 +95,8 @@ function* serve_question() {
 
 async function load_from_json_string(question_json_string) {
     // Load settings from localStorage
-    random_index = localStorage.getItem("random_index").toLocaleLowerCase() == "true" ? true : false;
-    case_sensitivity = localStorage.getItem("case_sensitivity").toLocaleLowerCase() == "true" ? true : false;
+    random_index = localStorage.getItem("random_index") == "true" ? true : false;
+    case_sensitivity = localStorage.getItem("case_sensitivity") == "true" ? true : false;
 
     random_mode_element.checked = random_index;
     case_sensitivity_element.checked = case_sensitivity;
