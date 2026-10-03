@@ -69,7 +69,7 @@ function* serve_question() {
                 
                 answered_correctly++;
                 console.log(answered_correctly);
-                ansers_correct_counter.innerText = `${answered_correctly} / ${questions_length}`;
+                ansers_correct_counter.innerText = `${answered_correctly} / ${questions_length-1}`;
                 if(answered_correctly == questions_length) {
                     window.alert("All ansers were correct!");
                 }
